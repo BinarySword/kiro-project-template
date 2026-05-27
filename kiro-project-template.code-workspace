@@ -151,6 +151,24 @@
     "version": "2.0.0",
     "tasks": [
       {
+        "label": "🔐 Setup secrets (all .env files)",
+        "type": "shell",
+        "command": "bash",
+        "args": ["-lc", "bash scripts/setup-secrets.sh --auto-discover"],
+        "options": { "cwd": "${workspaceFolder}" },
+        "problemMatcher": [],
+        "presentation": { "reveal": "always", "panel": "dedicated", "group": "bootstrap" }
+      },
+      {
+        "label": "🔐 Setup secrets (force placeholders)",
+        "type": "shell",
+        "command": "bash",
+        "args": ["-lc", "bash scripts/setup-secrets.sh --auto-discover --force"],
+        "options": { "cwd": "${workspaceFolder}" },
+        "problemMatcher": [],
+        "presentation": { "reveal": "always", "panel": "dedicated", "group": "bootstrap" }
+      },
+      {
         "label": "🚀 Run Setup Script",
         "type": "shell",
         "command": "bash",
