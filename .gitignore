@@ -46,3 +46,4 @@ pnpm-debug.log*
 
 # Supabase
 supabase/.temp/
+.gbrain-source
